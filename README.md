@@ -7,19 +7,19 @@ To run test for webapp, following these steps:
 
    * Run these commands to install
 
-        ``` cd automation_tests ```
-        
-        ``` yarn install ```
+            cd automation_tests
+
+            yarn install
 
    * Run one of this commands to execute test on a specific browser type
 
-        ``` yarn cypress run --browser chrome ```
+            yarn cypress run --browser chrome
 
-        ``` yarn cypress run --browser firefox ```
+            yarn cypress run --browser firefox
 
    * Run this command to generate cucumber test report
 
-        ``` yarn generate-report ```
+            yarn generate-report
 
 ### Test report folder
     * Report file in folder `automation_tests/report/cucumber_report.html`
@@ -41,8 +41,8 @@ To run test for webapp, following these steps:
 
   To run test parallel on different environments(os/browser), we can group test run on CI by these commands:
 
-    `yarn cypress run --record --group Windows/Chrome-87 --browser chrome`
-    `yarn cypress run --record --group Mac/Firefox --browser firefox`
+    yarn cypress run --record --group Windows/Chrome-87 --browser chrome
+    yarn cypress run --record --group Mac/Firefox --browser firefox
 
 
 
