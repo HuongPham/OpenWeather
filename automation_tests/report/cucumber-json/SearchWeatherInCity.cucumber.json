@@ -1,0 +1,278 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Search weather in your city",
+    "line": 1,
+    "id": "search-weather-in-your-city",
+    "tags": [],
+    "uri": "searchWeatherInCity.feature",
+    "elements": [
+      {
+        "id": "search-weather-in-your-city;user-search-weather-in-his-city-from-top-menu",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "User search weather in his city from top menu",
+        "tags": [
+          {
+            "name": "@SmokeTest",
+            "line": 4
+          },
+          {
+            "name": "@Severity_High",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I fill-in my \"Ho Chi Minh, VN\" with country code to search box on top menu and press Enter",
+            "result": {
+              "status": "passed",
+              "duration": 11021000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I can see the weather in my city",
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "City 'Ho Chi Minh' and \"vn\" flag is displayed correctly",
+            "result": {
+              "status": "passed",
+              "duration": 203000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-weather-in-your-city;user-search-weather-in-his-city-from-top-menu",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "User search weather in his city from top menu",
+        "tags": [
+          {
+            "name": "@SmokeTest",
+            "line": 4
+          },
+          {
+            "name": "@Severity_High",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I fill-in my \"Vienna,AT\" with country code to search box on top menu and press Enter",
+            "result": {
+              "status": "passed",
+              "duration": 4724000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I can see the weather in my city",
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "City 'Vienna' and \"at\" flag is displayed correctly",
+            "result": {
+              "status": "passed",
+              "duration": 135000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-weather-in-your-city;user-search-weather-in-his-city-from-top-menu",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "User search weather in his city from top menu",
+        "tags": [
+          {
+            "name": "@SmokeTest",
+            "line": 4
+          },
+          {
+            "name": "@Severity_High",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I fill-in my \"Munich,  DE\" with country code to search box on top menu and press Enter",
+            "result": {
+              "status": "passed",
+              "duration": 5349000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I can see the weather in my city",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "City 'Munich' and \"de\" flag is displayed correctly",
+            "result": {
+              "status": "passed",
+              "duration": 208000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-weather-in-your-city;user-search-weather-in-another-cities-from-search-result-page",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "User search weather in another cities from search result page",
+        "tags": [
+          {
+            "name": "@Severity_Medium",
+            "line": 14
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I searched weather in the 'Monster' city from top menu",
+            "result": {
+              "status": "passed",
+              "duration": 4701000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "keyword",
+                      "city",
+                      "country"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "glenWood, AU",
+                      "Glenwood",
+                      "au"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I fill-in another city with country code to search box in the search result page",
+            "result": {
+              "status": "passed",
+              "duration": 484000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I press search button",
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I can see weather in that city",
+            "result": {
+              "status": "passed",
+              "duration": 171000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-weather-in-your-city;user-can-see-8-days-weather-forecast-of-the-searched-city",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "User can see 8 days weather forecast of the searched city",
+        "tags": [
+          {
+            "name": "@Severity_Medium",
+            "line": 22
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I searched weather in the \"Floria\" city from top menu",
+            "result": {
+              "status": "passed",
+              "duration": 4588000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I click the city name link on the search result page",
+            "result": {
+              "status": "passed",
+              "duration": 2678000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I can see 8 days weather forecast of my city",
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

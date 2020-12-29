@@ -1,6 +1,6 @@
-# Development Challenge Demonstration Scripts
+# Demonstration Scripts
 This repository contains demo scripts for web application automation test using Cypress and test desgin documentation
-
+## Formating code by this command : `./node_modules/.bin/eslint --init`
 <br >
 
 ## Run automation test
@@ -22,7 +22,7 @@ To run test for webapp, following these steps:
 <br />
 
 ## CI/CD integration 
-Be able to run test on one of the CI Provider (https://docs.cypress.io/guides/guides/continuous-integration.html#Setting-up-CI)
+Be able to run test on one of the CI Provider by following this guide (https://docs.cypress.io/guides/guides/continuous-integration.html#Setting-up-CI)
 
 ## Cloud intergration
 Be able to setup and run test on Browser Stack by following config in this link (https://www.browserstack.com/docs/automate/cypress)
@@ -34,6 +34,8 @@ To run test parallel on different environments(os/browser), we can group test ru
 
 `yarn cypress run --record --group Windows/Chrome-87 --browser chrome`
 `yarn cypress run --record --group Mac/Firefox --browser firefox`
+
+
 
 
 
