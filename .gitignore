@@ -1,0 +1,3 @@
+/automation_tests/node_modules
+/automation_tests/report/*
+yarn.lock

@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "lint": "eslint src test",
+    "cypress:open": "cypress open --config-file ./cypress.json",
+    "test": "cypress run",
+    "cucumber": "cucumber-js ./automation-tests/integrations/**/*.feature",
+    "clean-results": "rm -rf reports",
+    "generate-report": "node tools/generate-cucumber-report.js"
+  },
+  "author": "Huong Pham",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.2.0",
+    "cypress": "^6.2.0",
+    "cypress-cucumber-preprocessor": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "./features",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "report/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

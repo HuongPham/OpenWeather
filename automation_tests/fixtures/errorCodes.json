@@ -1,0 +1,10 @@
+{
+   "k1": {
+       "kw": "#Manila",
+       "errorCode": "401"
+        },
+    "k2": {
+        "kw": "ah",
+        "errorCode": "500"
+    }
+}
