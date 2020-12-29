@@ -4,13 +4,19 @@ This repository contains demo scripts for web application automation test using 
 
 ## Run automation test
 To run test for webapp, following these steps:
-    * Run these commands to install:
+
+   * Run these commands to install
+
         ``` cd automation_tests ```
         ``` yarn install ```
-    * Run one of this commands to execute test on a specific browser type
-        ``` yarn cypress run --browser chrome```
-        ``` yarn cypress run --browser firefox```
-    * Run this command to generate cucumber test report:
+
+   * Run one of this commands to execute test on a specific browser type
+
+        ``` yarn cypress run --browser chrome ```
+        ``` yarn cypress run --browser firefox ```
+
+   * Run this command to generate cucumber test report
+
         ``` yarn generate-report ```
 
 ### Test report folder
