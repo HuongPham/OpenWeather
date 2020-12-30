@@ -11,7 +11,9 @@ To run test for webapp, following these steps:
 
             yarn install
 
-   * Run one of this commands to execute test on a specific browser type
+   * Run one of the following commands to execute test on a specific browser. Default browser is chrome
+            
+            yarn cypress run
 
             yarn cypress run --browser chrome
 
